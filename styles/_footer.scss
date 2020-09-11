@@ -1,0 +1,30 @@
+footer{
+    padding: 24px 0px 31px 0px;  
+    background-color: $colorblanco;
+    position: relative;
+    z-index: 6;
+    .parrafos{
+        margin:0px 5%;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+    .iconos{
+        margin: 0px 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        li{
+            list-style: none; 
+            text-align: center;
+            .link{
+                font-size: 16px;
+                color: $colornegro;
+            }
+            .link:hover{
+                color: $colorcyan;
+            }
+            .link:active{
+                color: $colorgris;
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+/*------------------TABLET VERTICAL 1024px--------------------*/
+
+@media screen and (min-width: 1024px){
+    header{
+        #barranavegacion{
+            padding: 0px 7%;
+            position: fixed;
+            height: 80px;
+            a{
+                img{
+                    width: 36px;
+                    height: 36px;
+                    margin: 22px 0px;
+                }
+            }
+            nav{
+                .menu{
+                    ul{
+                        position: relative;
+                        top: 0;
+                        overflow: visible;
+                        li{
+                            display: inline-block;
+                            padding-left: 48px;
+                            .link{
+                                color: $colornegro;
+                                margin-top: -4px;
+                            }
+                        }
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+                input#checkbox{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /*--------------------------------------------------*/
+
+    main{
+        margin-top: 80px;
+        padding: 0;
+        width: 100%;
+        #presentacionpagina{
+            position: relative;
+            top:120px;
+            height: 369px;
+            margin: 0px 14%;
+            padding: 0px;
+            width: 72%;
+            .h1{
+                font-size: 64px;
+                padding: 0px;
+                line-height: 84px;
+                br{
+                    display: none;
+                }
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .button{
+                margin: 56px 0px 5px 0px;
+                height: 56px;
+                font-size: 18px;
+                line-height: 24px;
+                width: fit-content;
+            }
+        }
+        #episodios{
+            padding: 0;          
+            position: relative;
+            bottom: -95px; 
+            .contenidoepisodios{   
+                h2{
+                    font-size: 48px;
+                    line-height: 62px;
+                    margin: 0 14%;
+                    padding: 110px 0 26px 0;
+                }
+                .spotify{
+                    padding-bottom: 160px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 72px;
+                    margin: 0px 7%;
+                    width: 86%;
+                    iframe{
+                        height: 232px;
+                    }
+                }
+            }
+        }
+        #dedondevenimos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .foto{
+                img{
+                    height: 660px;
+                    align-self: flex-end;
+                    margin: 0 82px 0 0;
+                }
+            }
+            .infotipografica{
+                margin: 0;
+                h2{
+                    font-size: 48px;
+                    line-height: 62px;
+                    padding-bottom: 24px;
+                    br {   
+                        display: none;
+                    }
+                }
+                .parrafos{
+                    font-size: 16px;
+                    line-height: 24px;
+                    width: 464px;
+                }
+            }
+        }
+        #invitados{  
+            margin-top: 0;
+            padding-top: 80px;
+            h2{
+                font-size: 48px;
+                line-height: 62px;
+                margin: 0 14%;
+                padding: 0 0 36px 0; 
+                br {   
+                    display: none;
+                }
+            }   
+            .fotosinvitados{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: "a1 b1 c1" "a2 b2 c2";         
+                .a1{ grid-area: a1;}
+                .b1{ grid-area: a2;}
+                .a2{ grid-area: b1;}
+                .b2{ grid-area: b2;}
+                .a3{ grid-area: c1;}
+                .b3{ grid-area: c2;}
+            }
+        }
+        #nuestrostemas{      
+            h2{
+                font-size: 48px;
+                line-height: 62px;
+                margin: 0 14%;
+                padding: 64px 0 69px 0; 
+                br {   
+                    display: none;
+                }
+            }   
+            .listatemas{
+                margin: 0 14%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+        #ultimasnovedades{
+            height: 518px; 
+            .overflow{ 
+                height: 518px; 
+                .contenidonovedades{
+                    h2{
+                        font-size: 48px;
+                        line-height: 62px;
+                    }
+                } 
+            }
+        }
+    }
+
+    /*--------------------------------------------------*/
+
+    footer{
+        margin: 0;
+        padding: 24px 7% 31px 7%; 
+    }
+}

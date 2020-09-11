@@ -1,0 +1,85 @@
+@import "variables";
+
+@import "header";
+
+@import 'main';
+
+@import 'footer';
+
+@import "768px";
+
+@import "1024px";
+
+/*--------GENERALES---------*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $colorblanco;
+}
+
+/*----TITULARES----*/
+
+.titulo{
+    font-family: $fuentetitulares;
+    color: $colornegro;
+    letter-spacing: 0;
+    font-weight: $pesotitulares;
+}
+
+.tachado{
+    text-decoration: line-through;
+}
+
+.azul{
+    color: $colorazulclaro;
+}
+
+
+/*----PARRAFO----*/
+
+.parrafos{
+    font-family: $fuenteparrafos;
+    color: $colornegro;
+    letter-spacing: 0;
+}
+
+/*----BOTONES----*/
+
+.button{
+    background: $colorcyan;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttontext{
+    font-family: $fuentebotones;
+    font-weight: $pesobotones;
+    color: $colornegro;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button:hover{
+    background-image: linear-gradient(to left, $colorazulclaro, $colorcyan);
+}
+
+.button:hover .buttontext{
+    color: $colorblanco;
+}
+
+a{
+    text-decoration: none;
+}

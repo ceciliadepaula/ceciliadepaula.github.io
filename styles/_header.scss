@@ -1,0 +1,109 @@
+header{
+    #barranavegacion{
+        width: 100%;
+        padding: 0px 5%;
+        position: fixed;
+        height: 44px;
+        top: 0;
+        background-color: $colorblanco;
+        z-index: 13;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        a{
+            img{ 
+                width: 24px;
+                margin: 10px 0px; 
+            }
+        }
+        nav{
+            z-index: 15;
+            height: 44px;
+            .menu{
+                margin-top: 16px;  
+                align-items: center;
+                ul{
+                    width: 100%;
+                    position: absolute;
+                    top: 44px;
+                    right: 0;
+                    overflow: hidden;
+                    background-color: $colorazulclaro;
+                    height: 0px;
+                    li{
+                        list-style: none;
+                        padding: 18px 0px 16px 5%;
+                        position: relative;
+                        .link{
+                            position: relative;
+                            font-family: $fuenteparrafos;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            color: $colorblanco;
+                            letter-spacing: 0;
+                            display: block;
+                        }
+                    }
+                    li:hover{
+                        background-color: $colorblanco;
+                        .link{
+                            font-weight: $pesolinks;
+                            color: $colorcyan;
+                            text-decoration: line-through;
+                        }  
+                    }
+                    li:active{
+                        background-color: $colorblanco;
+                        .link{            
+                            color: $colorgris;
+                            text-decoration: line-through;
+                        }  
+                    }
+
+                }
+                input[type="checkbox"]:checked ~ ul {
+                    height: 224px;
+                } 
+
+                /*---------CHECKBOX TRANSPARENTE-----------*/
+                input{
+                    display: block;
+                    width: 44px; 
+                    height: 44px;
+                    opacity: 0;
+                    z-index: 2;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;  
+                    margin-right: 3.5%;            
+                }
+
+                /*---------SPAN MENÚ HAMBURGUESA-----------*/
+                span{
+                    display: block;
+                    width: 18px;
+                    height: 2px;
+                    margin-bottom: 3px;
+                    position: relative;
+                    background: $colornegro;
+                    z-index: 11;
+                    transform-origin: 3.75px 1px;
+                }           
+                        
+                /*---------MOVIMIENTO A CRUZ-----------*/
+                input:checked ~ span {
+                    opacity: 1;
+                    transform: rotate(45deg) translate(2px, 1px);
+                }            
+                input:checked ~ span:nth-last-child(3) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(0.2, 0.2);
+                }
+                input:checked ~ span:nth-last-child(2) {
+                    transform: rotate(-45deg) translate(1px, 0px);
+                }
+                
+            }
+        }
+    }
+}

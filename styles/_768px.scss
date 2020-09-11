@@ -1,0 +1,132 @@
+/*------------------TABLET VERTICAL 768px--------------------*/
+
+ @media screen and (min-width: 768px){
+    main{
+        #presentacionpagina{
+            margin: 50px 0px 0px 0px;
+            .h1{
+                font-size: 64px;
+                line-height: 84px;
+            }
+            .movil{
+                display: none;
+            }
+            .desktop{
+                display: flex;
+                font-size: 16px;
+                line-height: 24px;
+                width: 628px;
+            }
+            .button{
+                margin: 56px 0px 5px 0px;
+                padding: 0px 59px;
+                height: 56px;
+                font-size: 18px;
+                line-height: 24px;
+                width: fit-content;
+            }
+        }
+        #episodios{
+          padding-top: 25px;
+            .contenidoepisodios{   
+                .spotify{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 20px;
+                    iframe{
+                        height: 232px;
+                        
+                    }
+                }
+            }
+        }
+        #dedondevenimos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .infotipografica{
+                align-self: center;
+                margin-right: 10%;
+                h2{
+                    br {   
+                        display: none;
+                    }
+                }   
+            }
+        }
+        #invitados{                
+                padding-top: 64px;
+            h2{
+                br {   
+                    display: none;
+                }
+            }   
+            .fotosinvitados{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "a1 b1" "a2 b2" "a3 b3";         
+                .a1{ grid-area: a1;}
+                .b1{ grid-area: b1;}
+                .a2{ grid-area: a2;}
+                .b2{ grid-area: b2;}
+                .a3{ grid-area: a3;}
+                .b3{ grid-area: b3;}
+            }
+        }
+        #nuestrostemas{      
+            h2{
+                br {   
+                    display: none;
+                }
+            }   
+            .listatemas{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        #ultimasnovedades{
+            .overflow{ 
+                .contenidonovedades{
+                    display: flex;
+                    flex-direction: column;
+                    h2{
+                        margin: 0px;
+                    }
+                    .button{
+                        margin: 36px 0px 5px 0px;
+                        padding: 0px 59px;
+                        height: 56px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        width: fit-content;
+                        align-self: center;
+                    }
+                } 
+            }
+        }
+    }
+
+    /*--------------------------------------------------*/
+
+    footer{
+          display: grid;
+          grid-template-columns: 1fr 1fr;          
+          padding: 24px 5% 31px 5%; 
+        .parrafos{
+            margin: 0px;
+            padding: 0px;
+            text-align: left;            
+        }
+        .iconos{            
+            width: 200px;
+            padding: 0px;
+            margin: 0px;
+            justify-self: end;           
+            li{
+                text-align: right; 
+                .link{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
