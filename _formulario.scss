@@ -1,0 +1,61 @@
+.titulo2jerarquia{
+    margin-top: 80px;
+    text-align: center;
+    font-family: $fuentetitulares;
+    font-weight: 700;
+    color: $colortextos;
+    font-size: 2.2em;
+    line-height: 1.4em;    
+    margin-bottom: 0px; 
+}
+
+.titulo2jerarquia:hover{
+    color: $colorfondo1;
+}
+
+#formulario{
+    .descripcion{
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+form{
+    .completar{
+        width: 90%;
+        height: 2em;
+        font-family: $fuentetextos;
+        font-size: 1em;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -20px;
+        border: 0px;
+        background-color: $colorfondo1;
+    }
+    .dejarmensaje{
+        height: 35vh;
+    }
+    .enviar{
+        border: 0px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 40px;
+        font-family: $fuentetextos;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.9em;  
+        justify-content: center;
+        align-items: center;
+        background-color: $colortextos;
+        color: $colorfondo1;
+    }
+    .enviar:hover{
+        transition: all .3s ease;
+        color: $colortextos;
+        background-color: $colorfondo1;
+    }
+}

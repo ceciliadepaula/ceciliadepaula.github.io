@@ -1,0 +1,26 @@
+footer{
+    padding-top: 15px;
+    padding-bottom: 12px;
+    color: $colortextos;
+    .iconos{
+        padding-top: 20px;
+        padding-bottom: 7px;
+        text-align: center;
+        font-size: 1.7em;
+        letter-spacing: 0.2em;
+        a{
+            color: $colortextos;
+        }
+        a:hover{
+            color: $colorfondo1;
+            transition: all .2s ease;
+        }
+    }
+    .datosfinales{
+        font-family: $fuentetextos;
+        text-align: center;
+        font-size: 1em;
+        line-height: 0.8em;
+        margin-top: 0.4em;
+    }
+}

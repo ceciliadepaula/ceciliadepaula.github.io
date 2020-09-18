@@ -1,0 +1,132 @@
+/*-------------CELULAR----------*/
+#presentacion{
+    background-color: $colorfondo1;
+    .izquierda{
+        height: 30vh;
+        background-image: url(imagenes/maquina.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .derecha{
+        height: 30vh;
+        background-image: url(imagenes/popis2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;  
+    }
+}
+
+
+
+.descripcion{
+    font-family: $fuentetextos;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    text-align: center;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;  
+    .negrita{
+        font-weight: 700;
+    } 
+}
+
+
+#estudios{
+    background-color: $colorfondo1;
+    .izquierda{
+        height: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .centro{
+        height: 30vh;
+        background-image: url(imagenes/wallar.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .derecha{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        height: 100%;
+    }
+}
+
+
+#webfull{
+    background-color: $colorfondo1;
+    .izquierda{
+        height: 30vh;
+        background-image: url(imagenes/bunbury.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .derecha{
+        height: 30vh;
+        background-image: url(imagenes/diario.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;  
+    }
+}
+
+
+
+
+
+
+
+/*-------------COMPUTADORA----------*/
+@media (min-width:800px){
+       
+    .descripcion{
+        width: 80%;
+        line-height: 1.6em;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        .negrita{
+            font-weight: 900;
+        } 
+    }
+
+    #presentacion{
+        height: 400px;
+        .caja{
+            float: left;
+            width: 33.33%;
+            height: 100%;
+        }
+        .izquierda{
+            background-image: url(imagenes/juancruz.jpg);
+        }
+    }
+    
+    #estudios{
+        height: 400px;
+        .caja{
+            float: left;
+            width: 33.33%;
+            height: 100%;
+        }
+    }
+    
+    
+    #webfull{
+        height: 400px;
+        .caja{
+            margin-top: -10%;
+            float: left;
+            width: 33.33%;
+            height: 100%;
+        }
+        .izquierda{
+            background-image: url(imagenes/fito.jpg);
+        }     
+        .derecha{
+                background-image: url(imagenes/danilo.jpg);
+        } 
+    }
+}

@@ -1,0 +1,227 @@
+/*-------------CELULAR----------
+----------info tipografica--------------*/
+header{
+    height: 100vh;
+    h1.tituloppal{
+        margin-top: 5vh;
+        text-align: center;
+        font-family: $fuentetitulares;
+        font-weight: 800;
+        color: $colortextos;
+        font-size: 3em;  
+        .palabradestacada{
+            color: $colorfondo1;
+        }     
+    }
+    h1.tituloppal:hover{
+        color: $colorfondo1;
+        .palabradestacada{
+            color: $colortextos;
+        }     
+    }
+    h3.titulosecundario{
+        margin-top: -3%;
+        text-align: center;
+        font-family: $fuentetitulares;
+        font-weight: 500;
+        color: $colortextos;
+        font-size: 1.5em;
+        line-height: 1.4em;       
+    }
+    .flechita {
+        i{
+        color: $colorfondo1;
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        animation: subirbajar 2.5s ease infinite;
+        }
+    }
+    #foto {
+        width: 250px; 
+        border-radius: 100%;  
+        display: flex;
+        align-items: center;
+        margin: 5vh auto;     
+    }
+    .fondoblanco{
+        background-color: $colorfondo1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 30%;
+        width: 100%;  
+        z-index: -5;
+    }
+}
+
+
+/*------------animaciones------*/
+
+@keyframes zoom{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.4);}
+    100% {transform: scale(1);}
+}
+
+@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(90deg);}
+    100% {transform: rotate(180deg);}
+}
+
+@keyframes subirbajar{
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(25px);}
+    100% {transform: translateY(0px);}
+}
+
+/*------------circulos------*/
+
+.circulosanimados{
+    .circulo{
+        background-color: $colorprincipal;
+        border-radius: 100%;
+        z-index: -4;
+    }
+    .c3{
+        width: 80px;
+        height: 80px;
+        z-index: -4;
+        position: fixed;
+        top: 20%;
+        left: 20%;
+        animation: zoom 5s ease infinite;
+    }
+    .c4{
+        width: 120px;
+        height: 120px;
+        z-index: -4;
+        position: fixed;
+        top: 15%;
+        right: 15%;
+        animation: zoom 8s ease infinite;
+    }
+    .aro{
+        border-radius: 100%;
+        z-index: -5;
+    }
+    .a1{
+        width: 110px;
+        height: 110px;
+        border: 2px dashed $colorprincipal;
+        z-index: -4;
+        position: fixed;
+        top: 15%;
+        left: 0%;
+        animation: rotate 7s ease infinite;
+    }
+    .a2{
+        border: 2px dashed $colorprincipal;
+        width: 90px;
+        height: 90px;
+        z-index: -4;
+        position: fixed;
+        top: 18%;
+        right: -2%;
+        animation: rotate 7s ease infinite;
+    }
+}
+
+
+
+
+/*-------------COMPUTADORA----------*/
+@media (min-width:800px){
+
+    header{
+        .fondoblanco{
+            height: 30%;
+        }
+        h1.tituloppal{
+            font-size: 5.4em;
+            margin-top: -3%;
+        }
+    }
+
+    .circulosanimados{
+        .circulo{
+            background-color: $colorprincipal;
+            border-radius: 100%;
+            z-index: -4;
+        }
+        .c1{
+            width: 180px;
+            height: 180px;
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            animation: zoom 10s ease infinite;
+        }    
+        .c2{
+            width: 100px;
+            height: 100px;
+            z-index: -4;
+            position: fixed;
+            top: 7%;
+            left: 15%;
+            animation: zoom 7s ease infinite;
+        }
+        .c3{
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            top: 10%;
+            left: 75%;
+        }
+        .c4{
+            width: 150px;
+            height: 150px;
+            position: fixed;
+            top: 20%;
+            right: 50%;
+        }
+        .aro{
+            border-radius: 100%;
+            z-index: -5;
+        }
+        .a1{
+            width: 250px;
+            z-index: -4;
+            height: 250px;
+            position: fixed;
+            top: 10%;
+            left: 20%;        
+        }
+        .a2{
+            z-index: -2;
+            width: 300px;
+            height: 300px;
+            position: fixed;
+            top: 5%;
+            right: 20%;  
+            animation: rotate 20s ease infinite;     
+        }
+        .a3{
+            border: 2px dashed $colorprincipal;
+            width: 220px;
+            height: 220px;
+            z-index: -4;
+            position: fixed;
+            top: 15%;
+            right: 2%;
+            animation: rotate 12s ease infinite;
+        }
+        .a4{
+            border: 2px dashed $colorprincipal;
+            width: 180px;
+            height: 180px;
+            z-index: -4;
+            position: fixed;
+            top: 17%;
+            left: 2%;
+            animation: rotate 25s ease infinite;
+        }
+    }
+}
+
